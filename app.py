@@ -1,8 +1,7 @@
 from flask import Flask, request, jsonify
 from fastai import *
+from fastai.vision import *
 from fastai.vision.all import *
-from fastai.data.external import untar_data,URLs
-from fastai.data.transforms import get_image_files
 from flask_cors import CORS,cross_origin
 app = Flask(__name__)
 CORS(app, support_credentials=True)
